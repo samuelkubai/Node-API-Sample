@@ -1,0 +1,44 @@
+{
+  "name": "node-js-api-sample",
+  "version": "1.0.0",
+  "description": "Sample node js application to work on",
+  "main": "src/app.ts",
+  "repository": "git@github.com:samuelkubai/node-api.git",
+  "author": "Kubai Kamau",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "ENV_FILE=./config/.env.prod node -r tsconfig-paths/register ./bin/app.js",
+    "dev": "ENV_FILE=./config/.env.dev ts-node -r tsconfig-paths/register ./src/app.ts",
+    "test:unit": "ENV_FILE=./config/.env.test jest"
+  },
+  "dependencies": {
+    "@types/dotenv-parse-variables": "^2.0.1",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.36",
+    "@types/validator": "^13.7.2",
+    "@types/yamljs": "^0.2.31",
+    "connect": "^3.7.0",
+    "dotenv-extended": "^2.9.0",
+    "dotenv-parse-variables": "^2.0.0",
+    "express": "^4.18.1",
+    "express-openapi-validator": "^4.13.7",
+    "morgan": "^1.10.0",
+    "morgan-body": "^2.6.6",
+    "swagger-routes-express": "^3.3.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.2",
+    "validator": "^13.7.0",
+    "winston": "^3.7.2",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@types/supertest": "^2.0.12",
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^10.8.0"
+  }
+}
